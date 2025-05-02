@@ -1,5 +1,11 @@
+:root{
+--boja1:#ff7e5f;
+--bela:white;
+--font: Arial, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font);
     color: #333;
     margin: 0;
     padding: 0;
@@ -19,7 +25,7 @@ h2 {
     .logo {
         font-size: 24px;
         font-weight: bold;
-        color: #ff7e5f;
+        color: var(--boja1);
     }
     .nav-links {
         list-style: none;
@@ -32,7 +38,7 @@ h2 {
             text-decoration: none;
             font-weight: bold;
             &:hover{
-                color: #ff7e5f;
+                color: var(--boja1);
             }
         }
     }
@@ -47,12 +53,12 @@ h2 {
     
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: var(--bela);
 
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    background: linear-gradient(45deg, var(--boja1), #feb47b);
     &:hover{
         box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
     }
@@ -70,7 +76,7 @@ h2 {
     }
     h1 {
         font-size: 48px;
-        color: #ff7e5f;
+        color:var(--boja1);
     }
     p {
         font-size: 18px;
@@ -93,7 +99,7 @@ h2 {
     justify-content: space-between;
 }
 .card {
-    background: white;
+    background: var(--bela);
     padding: 20px;
     width: 27%;
     border-radius: 10px;
@@ -105,7 +111,7 @@ h2 {
     text-align: center;
     padding: 20px;
     background: #222;
-    color: white;
+    color: var(--bela);
 }
 
 /* Responsive */
