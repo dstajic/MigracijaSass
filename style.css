@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+  font-family: var(--font);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  --boja1:#ff7e5f;
+  --bela:white;
+  --font: Arial, sans-serif;
+  --odredjenPadding: 15px 30px;
+  --odredjenPadding2: 20px;
+  --odredjenBoxShaddow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --odredjenBorderRadius: 8px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--odredjenPadding);
+  box-shadow: var(--odredjenBoxShaddow);
+  margin-bottom: 10px;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--boja1);
+}
+.navbar .nav-links {
+  list-style: none;
+  padding: 0;
+}
+.navbar .nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar .nav-links a:hover {
+  color: var(--boja1);
+}
+@media (max-width: 576px) {
+  .navbar .nav-links {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Primary Button */
+.primary-btn {
+  display: inline-block;
+  padding: var(--odredjenPadding);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--bela);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--odredjenBorderRadius);
+  background: linear-gradient(45deg, var(--boja1), #feb47b);
+}
+.primary-btn:hover {
+  box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10px;
+}
+@media (max-width: 576px) {
+  .main {
+    display: block;
+    /* TODO: Svojstva da se centrira sadržaj */
+  }
+}
+.main .content {
+  width: 50%;
+  /* TODO: Responsive mixin */
+}
+.main h1 {
+  font-size: 48px;
+  color: var(--boja1);
+}
+.main p {
+  font-size: 18px;
+}
+.main img {
+  width: 40%;
+  /* TODO: Responsive mixin */
+}
+
+/* Features & Plans Sections */
+.features {
+  background: #f3f3f3;
+}
+
+.center-section {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background: var(--bela);
+  padding: var(--odredjenPadding2);
+  width: 27%;
+  border-radius: 10px;
+  box-shadow: var(--odredjenBoxShaddow);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: var(--odredjenPadding2);
+  background: #222;
+  color: var(--bela);
+}
+
+/* Responsive */
+
+/*# sourceMappingURL=style.css.map */
