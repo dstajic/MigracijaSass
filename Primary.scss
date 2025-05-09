@@ -1,0 +1,18 @@
+.primary-btn {
+    display: inline-block;
+    padding: var(--odredjenPadding);
+    cursor: pointer;
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--bela);
+
+    text-decoration: none;
+    border: none;
+    border-radius: var(--odredjenBorderRadius);
+    background: linear-gradient(45deg, var(--boja1), #feb47b);
+    &:hover{
+        box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
+    }
+}
+

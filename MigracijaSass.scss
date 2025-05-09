@@ -4,6 +4,10 @@
         @content;
     }
 }
+@import 'Variable';
+@import 'Primary';
+@import 'Header';
+@import 'Content';
 
 body {
     font-family: var(--font);
@@ -11,117 +15,13 @@ body {
     margin: 0;
     padding: 0;
 
-    --boja1:#ff7e5f;
-    --bela:white;
-    --font: Arial, sans-serif;
-    --odredjenPadding: 15px 30px;
-    --odredjenPadding2: 20px;
-    --odredjenBoxShaddow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --odredjenBorderRadius: 8px;
+   
 }
 h2 {
     font-size: 32px;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--odredjenPadding);
-    box-shadow: var(--odredjenBoxShaddow);
-    margin-bottom: 10px;
-  
-    
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: var(--boja1);
-    }
-    .nav-links {
-        list-style: none;
-        padding: 0;
-        
-        li {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            &:hover{
-                color: var(--boja1);
-            }
-        }
-         @include responsive(576px) {
-          display: block;
-          text-align: center; // <-- center links
-          width: 100%;
-          
-        }
-    }
-}
 
-
-/* Primary Button */
-.primary-btn {
-    display: inline-block;
-    padding: var(--odredjenPadding);
-    cursor: pointer;
-    
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--bela);
-
-    text-decoration: none;
-    border: none;
-    border-radius: var(--odredjenBorderRadius);
-    background: linear-gradient(45deg, var(--boja1), #feb47b);
-    &:hover{
-        box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
-    }
-}
-
-
-/* Main Section */
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 10px;
-      @include responsive(576px) {
-          display: block;
-          align-items: center;
-          
-    }
-    .content {
-        width: 50%;
-        @include responsive(576px) {
-      width: 100%;
-      text-align: center;
-      margin-top: 40px;
-       
-    }
-    }
-    h1 {
-        font-size: 48px;
-        color:var(--boja1);
-        
-    }
-    p {
-        font-size: 18px;
-    }
-    img {
-        width: 40%;
-        @include responsive(576px) {
-       width: 100%;
-       align-items: center;
-       margin-top: 40px;
-    }
-    }
-}
-
-/* Features & Plans Sections */
 .features {
     background: #f3f3f3;
 }

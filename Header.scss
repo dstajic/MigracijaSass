@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--odredjenPadding);
+    box-shadow: var(--odredjenBoxShaddow);
+    margin-bottom: 10px;
+  
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--boja1);
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            &:hover{
+                color: var(--boja1);
+            }
+        }
+         @include responsive(576px) {
+          display: block;
+          text-align: center; // <-- center links
+          width: 100%;
+          
+        }
+    }
+}

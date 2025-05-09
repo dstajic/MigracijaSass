@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10px;
+      @include responsive(576px) {
+          display: block;
+          align-items: center;
+          
+    }
+    .content {
+        width: 50%;
+        @include responsive(576px) {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+       
+    }
+    }
+    h1 {
+        font-size: 48px;
+        color:var(--boja1);
+        
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        width: 40%;
+        @include responsive(576px) {
+       width: 100%;
+       align-items: center;
+       margin-top: 40px;
+    }
+    }
+}
