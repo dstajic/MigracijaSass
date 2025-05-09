@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: var(--font);
   color: #333;
@@ -81,12 +80,18 @@ h2 {
 @media (max-width: 576px) {
   .main {
     display: block;
-    /* TODO: Svojstva da se centrira sadržaj */
+    align-items: center;
   }
 }
 .main .content {
   width: 50%;
-  /* TODO: Responsive mixin */
+}
+@media (max-width: 576px) {
+  .main .content {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
 }
 .main h1 {
   font-size: 48px;
@@ -97,7 +102,13 @@ h2 {
 }
 .main img {
   width: 40%;
-  /* TODO: Responsive mixin */
+}
+@media (max-width: 576px) {
+  .main img {
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+  }
 }
 
 /* Features & Plans Sections */

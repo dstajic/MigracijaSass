@@ -90,12 +90,18 @@ h2 {
     justify-content: space-between;
     padding: 100px 10px;
       @include responsive(576px) {
-       display: block;
-        /* TODO: Svojstva da se centrira sadržaj */
+          display: block;
+          align-items: center;
+          
     }
     .content {
         width: 50%;
-        /* TODO: Responsive mixin */
+        @include responsive(576px) {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+       
+    }
     }
     h1 {
         font-size: 48px;
@@ -107,7 +113,11 @@ h2 {
     }
     img {
         width: 40%;
-        /* TODO: Responsive mixin */
+        @include responsive(576px) {
+       width: 100%;
+       align-items: center;
+       margin-top: 40px;
+    }
     }
 }
 
